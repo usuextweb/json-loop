@@ -1,0 +1,24 @@
+{
+  "DIRECTORY": {
+    "MEMBER": [
+      {
+        "FIRST": "Colton",
+        "LAST": "Blair",
+        "TITLE": "Web Manager",
+        "PHOTO": "https://extension.usu.edu/images/blair-colton-2022.jpg"
+      },
+      {
+        "FIRST": "Terence",
+        "LAST": "Larson",
+        "TITLE": "Web Designer",
+        "PHOTO": "https://extension.usu.edu/images/larson-terence.jpg"
+      },
+      {
+        "FIRST": "Jens",
+        "LAST": "Poulsen",
+        "TITLE": "Web Assistant",
+        "PHOTO": "https://extension.usu.edu/images/poulsen-jens.jpg"
+      }
+    ]
+  }
+}

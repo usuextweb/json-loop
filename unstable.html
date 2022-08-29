@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <div id="page-content"></div>
+    <script>
+      fetch("web-team-simple.json")
+        .then((response) => response.json())
+        .then((data) => {
+          var directoryMember = data.MEMBER;
+		  var textContent = "";
+		  for (i = 0; i < directoryMember[1].FIRST.length; i++)
+		  {textContent += 
+            directoryMember[i].FIRST + " " + directoryMember[i].LAST;
+       			 document.querySelector("#page-content").innerText = textContent;}
+		   })
+    </script>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <div id="page-content"></div>
+    <script>
+      fetch("web-team.json")
+        .then((response) => response.json())
+        .then((data) => {
+          var directoryMember = data.DIRECTORY.MEMBER;
+          document.querySelector("#page-content").innerText =
+            directoryMember[0].FIRST;
+        });
+    </script>
+  </body>
+</html>

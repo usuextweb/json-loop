@@ -22,12 +22,12 @@
   <body>
     <div class="container my-4">
       <h1>USU Extension Web Team</h1>
-      <ul id="page-content">
+      <div id="page-content">
        <div class="spinner-border mt-4" role="status">
 </div>
 		    <p>Loading...</p>
 
-      </ul>
+      </div>
     </div>
     <script>
       fetch("web-team.json")
@@ -43,7 +43,7 @@
               directoryMember[i].LAST +
               "</li>";
             setTimeout(function () {
-              document.querySelector("#page-content").innerHTML = textContent;
+              document.querySelector("#page-content").innerHTML = "<ul>" + textContent + "</ul>";
             }, 1000);
           }
         });
